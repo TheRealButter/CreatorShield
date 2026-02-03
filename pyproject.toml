@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "creatorshield"
+version = "0.1.0"
+description = "CreatorShield message shielding CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+creatorshield = "creatorshield.cli:main"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
